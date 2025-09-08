@@ -2,11 +2,10 @@
 #include <string>
 
 int main() {
-    int n = 0;
-
-    std::cin >> n;
-
-    for (int i = 0; i < n; ++i) {
+    int total_cases;
+    std::cin >> total_cases;
+    while (total_cases > 0) {
+        --total_cases;
         std::string str;
 
         std::cin >> str;
@@ -14,9 +13,9 @@ int main() {
         int len = str.length();
 
         if (len <= 10) {
-            std::cout << str << std::endl;
+            std::cout << str << '\n';
         } else {
-            std::cout << str[0] + std::to_string(len - 2) + str[len - 1] << std::endl;
+            std::cout << str[0] + std::to_string(len - 2) + str[len - 1] << '\n';
         }
     }
 

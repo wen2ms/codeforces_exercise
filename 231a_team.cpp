@@ -1,15 +1,15 @@
 #include <iostream>
 
 int main() {
-    int n = 0;
-
-    std::cin >> n;
+    int total_cases;
+    std::cin >> total_cases;
 
     int completed_problem = 0;
 
-    for (int i = 0; i < n; ++i) {
-        int count = 0;
+    while (total_cases > 0) {
+        --total_cases;
 
+        int count = 0;
         for (int j = 0; j < 3; ++j) {
             int has_solution = 0;
 
@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    std::cout << completed_problem << std::endl;
+    std::cout << completed_problem << '\n';
 
     return 0;
 }
