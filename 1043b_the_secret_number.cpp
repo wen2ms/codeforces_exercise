@@ -6,8 +6,8 @@
 int main() {
     int total_cases;
     std::cin >> total_cases;
-
-    for (int i = 0; i < total_cases; ++i) {
+    while (total_cases > 0) {
+        --total_cases;
         int64_t num;
         std::cin >> num;
 
