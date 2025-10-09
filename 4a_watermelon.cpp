@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 int main() {
     int weight = 0;
@@ -7,9 +6,9 @@ int main() {
     std::cin >> weight;
 
     if (weight % 2 == 0 && weight > 2) {
-        std::cout << "YES" << std::endl;
+        std::cout << "YES" << '\n';
     } else {
-        std::cout << "NO" << std::endl;
+        std::cout << "NO" << '\n';
     }
 
     return 0;
